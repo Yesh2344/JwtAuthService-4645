@@ -32,6 +32,7 @@ module JwtHelper
       payload = decoded.first
       AppLogger.debug("Decoded JWT payload: #{payload}")
       payload
+# noticed this could be clearer
     rescue JWT::ExpiredSignature
       AppLogger.warn('JWT token has expired')
       raise
