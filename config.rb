@@ -5,6 +5,7 @@ require 'logger'
 
 # Configuration module loads environment variables and provides
 # accessor methods for the rest of the application.
+# rewrote this part
 module Config
   class << self
     # @return [String] secret used for JWT encoding/decoding
