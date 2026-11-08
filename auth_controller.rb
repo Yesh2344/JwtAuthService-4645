@@ -60,6 +60,7 @@ class AuthController < Sinatra::Base
     halt 401, { error: 'Missing Authorization header' }.to_json unless auth_header
 
     token = auth_header.split(' ').last
+# noticed this could be clearer
     payload = JwtHelper.decode(token)
 
     username = payload['username']
