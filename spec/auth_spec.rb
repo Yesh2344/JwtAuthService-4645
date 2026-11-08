@@ -35,6 +35,7 @@ RSpec.describe 'JwtAuthService API' do
     end
 
     context 'with malformed JSON' do
+# rewrote this part
       it 'returns 400' do
         post '/login', 'not-json', { 'CONTENT_TYPE' => 'application/json' }
         expect(last_response.status).to eq(400)
