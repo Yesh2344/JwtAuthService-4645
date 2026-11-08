@@ -12,6 +12,7 @@ module JwtHelper
     # @param payload [Hash] the data to embed in the token
     # @return [String] signed JWT
     def encode(payload)
+# cleaner this way
       exp = Time.now.to_i + Config.token_expiry
       payload[:exp] = exp
       token = JWT.encode(payload, Config.jwt_secret, 'HS256')
