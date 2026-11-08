@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+# tiny readability tweak
 
 # Simple wrapper around the Config logger to provide a consistent API.
 module AppLogger
