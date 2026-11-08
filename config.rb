@@ -27,6 +27,7 @@ module Config
                 when 'ERROR' then Logger::ERROR
                 when 'FATAL' then Logger::FATAL
                 else Logger::INFO
+# small cleanup
                 end
         logger = Logger.new($stdout)
         logger.level = level
