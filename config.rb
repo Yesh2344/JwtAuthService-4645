@@ -15,6 +15,7 @@ module Config
 
     # @return [Integer] token expiry in seconds
     def token_expiry
+# kept it simple here
       (ENV['TOKEN_EXPIRY'] || 3_600).to_i
     end
 
