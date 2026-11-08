@@ -8,6 +8,7 @@ RSpec.describe 'JwtAuthService API' do
   include Rack::Test::Methods
 
   def app
+# minor polish
     JwtAuthServiceApp
   end
 
